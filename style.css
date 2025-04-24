@@ -1,0 +1,155 @@
+body{
+  font-family: sans-serif;
+}
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F1EFEC;
+  height: 10vh;
+  width: 50vw;
+
+}
+.containerHeader{
+  display: flex;
+  justify-content: center;
+}
+h1{
+  font-size: 2rem;
+  cursor: default;
+}
+.container{
+  width: 50vw;
+  height: 80vh;
+  background-color: #123458;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 30px 30px;
+  
+}
+section{
+  display: flex;
+  justify-content: center;
+}
+.containerTodo{
+  width: 40vw;
+  height: 70vh;
+  background-color: #F1EFEC;
+  border-radius: 30px;
+
+}
+label{
+  margin-top: 2vh;
+  margin-left: 6vw;
+  font-size: 1rem;
+  display: flex;
+}
+
+.containerInput {
+  width: 30vw; /* Ensure each task takes the full width of the container */
+  height: 5vh;
+  margin: 1vh 0; /* Space between tasks */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background: #F1EFEC;
+  border: 1px solid #a7a0a0;
+  border-radius: 20px;
+  margin-left: 4vw;
+}
+.containerInput input[type="text"] {
+  width: 80%; /* Task input takes most of the space */
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  outline: none;
+}
+
+.containerInput button {
+  margin-left: 10px; /* Space between the task input and buttons */
+}
+
+input{
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  background-color: #F1EFEC;
+  margin-right: 6vw;
+
+}
+input::placeholder{
+  font-size: 0.8rem;
+}
+#addButton{
+  position: relative;
+  right: 3vw;
+  width: 4vw;
+  padding: 4px;
+  border: none;
+  background-color: #14D02A;
+  color: rgb(241, 241, 241);
+  font-size: 1rem;
+  cursor: pointer;
+}
+#addButton:hover{
+  color: rgb(26, 25, 25);
+  transition: 0.1s ease-in-out;
+  transform: scale(1.1);
+
+}
+#addButton:active{
+  background-color: rgb(2, 110, 2);
+}
+
+.deleteButton{
+  position: relative;
+  right: 1vw;
+  width: 4vw;
+  padding: 4px;
+  border: none;
+  background-color: #D31515;
+  color: rgb(245, 244, 244);
+  font-size: 1rem;
+  cursor: pointer;
+}
+.deleteButton:hover{
+  color: rgb(26, 25, 25);
+  transition: 0.1s ease-in-out;
+  transform: scale(1.1);
+}
+.deleteButton:active{
+  background-color: rgb(116, 3, 3);
+}
+.done{
+  border: black 1px solid;
+}
+
+
+p{
+  margin-left: 6vw;
+}
+
+#containerAdded {
+  max-height: 40vh; /* Fixed height for the container */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 10px;
+  margin-top: 2vh;
+  background-color: #F1EFEC; /* Optional: style for the task container */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add some shadow for a better look */
+}
+
+#containerAdded::-webkit-scrollbar {
+  width: 8px;
+}
+
+#containerAdded::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+#containerAdded::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
